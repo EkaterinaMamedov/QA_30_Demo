@@ -32,9 +32,9 @@ public class CssSelectors {
         WebElement btnRadioButton = driver.findElement(By.cssSelector("#item-2"));
         //  WebElement btnRadioButton = driver.findElement(By.id("item-2"));
         btnRadioButton.click();
-       // WebElement radioButtonYes = driver.findElement(By.cssSelector("label[for='yesRadio']"));
-        WebElement radioButtonYes1 = driver.findElement(By.cssSelector("*[for='yesRadio']"));
-        WebElement radioButtonYes2 = driver.findElement(By.xpath("//label[@for='yesRadio']"));
+        WebElement radioButtonYes = driver.findElement(By.cssSelector("label[for='yesRadio']"));
+       // WebElement radioButtonYes1 = driver.findElement(By.cssSelector("*[for='yesRadio']"));
+       // WebElement radioButtonYes2 = driver.findElement(By.xpath("//label[@for='yesRadio']"));
 
 
         radioButtonYes.click();
@@ -48,7 +48,7 @@ public class CssSelectors {
         pause(4000);
         driver.navigate().back();
 
-        WebElement divWidgets = driver.findElement(By.cssSelector("div[class='category-cards'] div[class='card mt-4 top-card']:nth-child(4) div[class='card-body] h5"));
+        WebElement divWidgets = driver.findElement(By.cssSelector("div[class='category-cards'] div[class='card mt-4 top-card']:nth-child(4) div[class='card-body'] h5"));
         System.out.println(divWidgets.getText());
 
 
