@@ -50,25 +50,29 @@ public class XpathSelectors {
         inputFullName.sendKeys("Monkey");
         //form/div[@id='userName-wrapper']/div[2]/input
         //form/div[@id='userName-wrapper']//input
+        pause(4000);
 
         WebElement inputEmail = wd.findElement(By
                 .xpath("//input[@type='email']"));
         inputEmail.sendKeys("monkey@gmail.com");
+        pause(4000);
 
         WebElement textareaCurrentAddress = wd.findElement(By
                 .xpath("//textarea[@id='currentAddress']"));
         textareaCurrentAddress.sendKeys("monkey street 5");
-
+        pause(4000);
 
         WebElement textareaPermanentAddress = wd.findElement(By
                 .xpath("//textarea[@id='permanentAddress']"));
         textareaPermanentAddress.sendKeys("monkey avenue 6");
 
+        pause(4000);
 
         WebElement btnSubmit = wd.findElement(By
                 .xpath("//button[text()='Submit']"));
         btnSubmit.click();
 
+        pause(4000);
 
         WebElement outputForm = wd.findElement(By
                 .xpath("//div[@id='output']"));
